@@ -1,0 +1,19 @@
+# Install:    conda env create -f environment.yml
+# Activate:   conda activate ism
+# Deactivate: conda deactivate
+
+name: ism
+
+channels:
+  - conda-forge
+  - astropy
+
+dependencies:
+  - python
+  - numpy
+  - scipy
+  - matplotlib
+  - astropy
+  - click
+  - photutils
+  - spectral-cube
