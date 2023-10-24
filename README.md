@@ -18,7 +18,7 @@ conda activate ism
 ## Usage
 Every script comes with a help functionality, simply type `--help` after the function call. For example:
 ```
-python ../crop_cube.py --help
+python crop_cube.py --help
 ```
 Output:
 ```
