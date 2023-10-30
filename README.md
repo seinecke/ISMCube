@@ -53,7 +53,7 @@ python calc_physical_parameters_roi.py G340-350-12CO_cropped_integrated.fits --v
 
 ## Additional Information
 ### crop_cube.py
-The cube needs to come in Galactic coordinates. For cropping, the longitudes (`glon_lo, glon_hi`) need to be provided, but the latitudes (`glat_lo, glat_hi`) are optional. 
+The cube needs to come in Galactic coordinates. For cropping, the longitudes (`glon_lo, glon_hi`) need to be provided, but the latitudes (`glat_lo, glat_hi`) are optional. The coordinates need to be followed by a `d` to indicate degree.
 
 ### integrate_brightness.py
 By default the integration is performed over the entire velocity range in the cube. The minimum and maximum velocities (`vel_lo, vel_hi`) for the integration can be specified (in units of km/s). There is an option to remove noise before integrating. The noise is determined via the 68% percentile of negative temperatures and is removed by setting brightness temperatures to zero if they are below a multiple `mask_level` (also `m`) of this noise value. 
