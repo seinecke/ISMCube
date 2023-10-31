@@ -9,11 +9,11 @@ channels:
   - astropy
 
 dependencies:
-  - python
-  - numpy
-  - scipy
-  - matplotlib
-  - astropy
+  - python>=3.9
+  - numpy>=1.22
+  - scipy>=1.7
+  - matplotlib>=3.5.3
+  - astropy>=5.0
   - click
-  - photutils
-  - spectral-cube
+  - photutils>=1.9
+  - spectral-cube>=0.6
