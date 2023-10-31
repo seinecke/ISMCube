@@ -2,9 +2,12 @@
 Collection of scripts to work with ISM cubes (in FITS format), such as from the Mopra CO survey or the HI SGPS.
 
 ## Installation
-The following packages are required: `matplotlib, numpy, astropy, scipy, spectral-cube, photutils, click`.
+Python version `>=3.9` and the following packages are required: `matplotlib, numpy, astropy, scipy, spectral-cube, photutils, click`. They can be installed with `pip` via
+```
+pip install matplotlib>=3.5.3 numpy>=1.22 astropy>=5.0 scipy>=1.7 spectral-cube>=0.6 photutils>=1.9 click
+```
 
-If using *anaconda*, you can create a new environment with the provided `environment.yml`. Download the file, go to the folder with the file, and execute:
+If using *anaconda*, you can create a new environment with the provided `environment.yml`. Download the file, go to the folder with the file, and execute (it might take a while - you might want to consider `mamba` as your package manager, see below):
 
 ```
 conda env create -f environment.yml
@@ -12,6 +15,16 @@ conda env create -f environment.yml
 Every time you want to use this environment, activate it via:
 ```
 conda activate ism
+```
+
+If using *mamba*, you can create a new environment with the provided `environment.yml`. Download the file, go to the folder with the file, and execute:
+
+```
+mamba env create -f environment.yml
+```
+Every time you want to use this environment, activate it via:
+```
+mamba activate ism
 ```
 
 
